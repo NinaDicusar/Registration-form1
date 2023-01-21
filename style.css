@@ -1,0 +1,97 @@
+body{
+    font-family: Arial;
+}
+.account {
+    border: 1px solid #999;
+    padding: 20px;
+}
+.heading{
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 20px;
+}
+
+.form table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+
+.form table td:last-child{
+width: 40%;
+
+
+}
+.form table .avatar{
+    display: block;
+    width:100%;
+}
+
+.form table input[type="text"],
+input[id="userPassword"],
+.form table label{
+    display: block;
+    width: 100%;
+
+   padding: 5px; 
+   font-size: 120%;
+    border:none;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+.form table input{
+    border-bottom: 1px solid #999 !important;
+
+}
+.form table input:focus::placeholder{
+    color:blue;
+}
+.form table input:focus{
+    outline: none;
+    border-bottom-color:blue !important;
+}
+.form table span{
+    color:orangered;
+    visibility: hidden;
+    font-size: 75%;
+
+}
+.form table span::before{
+    content:"!";
+    font-size: 150%;
+    border:1px solid red;
+    padding:5px 17px;
+    display:inline-block;
+   border-radius:  100%;
+   margin-right: 10px;
+   animation:vibrate infinite .1s;
+   animation-direction: alternate ;
+    
+    
+}
+.form table input:invalid + span{
+    display: block;
+    visibility: visible;
+}
+.form table button{
+    padding: 10px;
+    width: 100%;
+    font-size: 150%;
+    font-weight: bold;
+    background-color: rgb(21, 21, 155);
+    color: white;
+    border-radius: 10px;
+
+
+
+}
+.form table button:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+@keyframes vibrate{
+    from{transform: translateX(0);
+ }
+    to{ transform: translateX(5px);
+
+ }
+}

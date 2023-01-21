@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rgistration form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="account">
+<header class="heading">
+    <h1>CREATE ACCOUNT </h1>
+    <H2> To create account you must...</H2>
+</header>
+<form class="form" action="creat account">
+    <table>
+        <tr>
+            <td><label>
+                <input type="text"
+                placeholder="Full name"
+                pattern="\w+ \w+">
+                <span>
+two words with space required
+                </span>
+            </label>
+            </td>
+          
+
+            <td rowspan="2">
+                <img class="avatar"
+                 src="avatar placeholder.png" alt="avatar placeholder">
+            </td>
+        </tr>
+
+        <tr>
+            <td><label>
+                <input type="text"
+                placeholder="nickname"
+                pattern="\w{3,11}"> 
+                <span>
+one word between 3...11 symbols
+                </span>
+            </label>
+            </td>
+           
+          
+        </tr>
+        <tr>
+            <td><label>
+                <input id="userPassword" type="password"
+                placeholder="password"
+                 pattern="\w{6,15}"> 
+                <span>
+minimal 6 maximum 15 symbols
+                </span>
+            </label>
+            </td>
+           
+          
+        </tr>
+        <tr>
+           
+            <td>
+                <label> <input type="checkbox">
+            agree with terms</label>
+        </td>
+       
+            <td><button>CREATE</button></td>
+        </tr>
+    </table>
+
+</form>
+
+    </section>
+    
+</body>
+</html>
